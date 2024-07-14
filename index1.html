@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>E commerce website</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+      <div style="text-align: center;">
+        <img src="logo.jpg" alt="Your Company Logo" width="120px" height="100px"> 
+        <p style="text-align: center;">MyWorld</p>
+      <marquee>
+            <h1 > Welcome to MyWorld Furnitures</h1>
+      </marquee>
+      </div>
+        <nav>
+            <ul>
+                <li><a href=#home>Home</a></li>
+                
+                <li><a href=#About>About</a></li>
+                
+                <li><a href=#Products>Products</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+        <section id="Home">
+          <h3>Home</h3>
+          <h2>"Elevate Your Home with Modern Comfort"</h2>
+          <div style="text-align: center;">
+          <img src="welcome.jfif" width="550px">
+          <h4>Intriducing you to the new world of furnitures</h4>
+            Please Browse through our wide range of products . . .</p></div>
+        </section>
+        <section id="About">
+          <h3>About</h3>
+          <p>Let us introduce our company... </p>
+          <p>MyWorld furnitures are one of the leading furniture sellers for the past 3 decades. 
+          We have wide range of products ranging from chairs to to interior design products.
+          The unique designs, quality of the products and services make us stand out from the rest of the brands</p> 
+          <div style="text-align: center;">
+          <img src="about.jpg" width="500px" ></div>
+        </section>
+        
+        <section id="Products">
+          <h3>Products</h3>
+          <p>Browse through our exciting products</p>
+          <marquee>
+          <img src="furniture1.jfif" width="500px" height="505px"> 
+          <img src="furniture2.jfif" width="500px">
+          <img src="furniture3.jfif" width="500px">
+          <img src="furniture4.jfif" width="500px">
+          <img src="furniture5.jfif" width="500px" height="502px">
+        </marquee>
+        </section>
+        
+        <section id="Products">
+          <h3>Products</h3>
+          <p>Click for checking the details</p>
+          <article class="product">
+           <img src="furniture1.jfif" width="500px" height="505px" alt="Product 1"></div>
+        
+            <div class="product-details" style="display: none;">
+              <h4>Product: Hoop Chair</h4>
+              <p>Type : Furniture <br><br>
+                
+                Assembly : Not required<br><br>
+                
+                Frame : Metal Frame<br><br>
+                
+                Accessories : Cushion to be purchased additionally.<br><br>
+                
+                Quantity per carton : 1<br><br>
+                
+                These products are designed for outdoor use they require regular maintenance and care .</p>
+              <p>Price: $100</p>
+              <button data-product-id="1">Add to Cart</button>
+              </div>
+              </article>
+
+              <article class="product">
+              <img src="furniture3.jfif" width="500px" height="505px" alt="Product 1"></div>
+              <div class="product-details" style="display: none;">
+              <h4>Product: Sofa</h4>
+              <p>Type : Furniture <br><br>
+                
+                Assembly : Not required<br><br>
+                
+                Accessories : Cushion need not be purchased additionally.<br><br>
+                
+                Quantity per carton : 1<br><br>
+                
+                These products are designed for indoor use.</p>
+              <p>Price: $100</p>
+              <button data-product-id="2">Add to Cart</button>
+            </div>
+          </article>
+
+           <article class="product">
+            <img src="furniture4.jfif" width="500px" height="505px" alt="Product 1"></div>
+              <div class="product-details" style="display: none;">
+              <h4>Product:  Chairs</h4>
+              <p>Type : Furniture <br><br>
+                 Assembly : Not required<br><br>
+                Frame : Metal Frame<br><br>
+                Accessories : Cushion to be purchased additionally.<br><br>
+              Quantity per carton : 1<br><br>
+              These products are designed for outdoor and indoor and they require regular maintenance and care .</p>
+              <p>Price: $100</p>
+              <button data-product-id="2">Add to Cart</button>
+            </div>
+          </article>
+
+          </section>
+        
+       
+        <section id="contact">
+          <h3>Contact</h3>
+          <p>Please contact us for any further queries</p>
+          <img src="facebook.png" width="30px" height="20px"><br><br>
+          <img src="instagarm.jfif" width="20px">
+          <p> or email at <br>myworldstore@gmail.com</p>
+        </section>
+        <section id="cart">
+          <h3>Your Cart</h3>
+          <p>No items in your cart yet.</p>
+          
+        </section>
+       
+        <script>
+          const productDetails = document.querySelectorAll('.product-details');
+          const productImages = document.querySelectorAll('.product img');
+        
+          productImages.forEach((image, index) => {
+            image.addEventListener('click', () => {
+              productDetails[index].style.display = productDetails[index].style.display === 'none' ? 'block' : 'none';
+            });
+          });
+        </script>
+    </body>
+</html>
+
